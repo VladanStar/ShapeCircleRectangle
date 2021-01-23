@@ -42,4 +42,15 @@ public class Rectangle extends Shape {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null && obj instanceof Rectangle){
+            Rectangle r = (Rectangle)obj;
+            if(r.getA() == this.getA() && r.getB() ==this.getB()){
+                return true;
+            }
+        }
+        return false;
+    }
 }

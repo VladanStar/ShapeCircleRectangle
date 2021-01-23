@@ -1,6 +1,7 @@
 package com.company;
 
 public class Main {
+
     public static boolean isSquare(Shape s){
         if(s instanceof Rectangle){
             Rectangle r = (Rectangle)s;
@@ -20,6 +21,9 @@ public class Main {
         System.out.println(isSquare(s1));
         System.out.println(isSquare(s2));
         System.out.println(isSquare(s3));
+
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equals(s3));
 
     }
 }
